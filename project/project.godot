@@ -23,9 +23,15 @@ config/icon="res://icon.png"
 
 TowerData="*res://src/autoload/twrdata.gd"
 
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
+quality/2d/gles2_use_nvidia_rect_flicker_workaround=true
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
 environment/default_environment="res://default_env.tres"
