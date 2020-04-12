@@ -1,6 +1,6 @@
 # Elecoms Tower (working title)
 
-Elecoms Tower is a SimTower-inspired sandbox simulation game made made in Godot. In it, you've tasked to build the next regional HQ for Elecoms Corp. You've been given creative liberty over the design as long you assign offices to them.
+Elecoms Tower is a SimTower-inspired sandbox simulation game made in Godot. In it, you've tasked to build the next regional HQ for Elecoms Corp. You've been given creative liberty over the design as long you assign offices to them.
 
 ## Authors
 
