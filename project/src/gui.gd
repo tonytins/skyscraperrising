@@ -3,10 +3,10 @@ extends Control
 
 func _ready():
 	$WelcomeDlg.show()
-	$GPanel/TwrMenus/TwrNameLbl.text = TowerData.tower_name
+	$GPanel/GameMenus/NameLbl.text = TowerData.tower_name
 
 func _process(delta):
-	# $GPanel/TwrMenus/MoneyLbl.text = str(TowerData.budget)
+	# $GPanel/GameStatus/MoneyLbl.text = str(TowerData.budget)
 	pass
 
 func _on_WelcomeDlg_confirmed():

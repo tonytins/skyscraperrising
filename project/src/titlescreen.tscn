@@ -11,28 +11,28 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="."]
-margin_left = 312.0
+margin_left = 339.0
 margin_top = 235.0
-margin_right = 601.0
+margin_right = 628.0
 margin_bottom = 249.0
-text = "Welcome to City Limits!"
+text = "Welcome to Elecoms Tower!"
 align = 1
 
 [node name="TwrNameEdit" type="LineEdit" parent="."]
-margin_left = 312.0
+margin_left = 339.0
 margin_top = 261.0
-margin_right = 601.0
+margin_right = 628.0
 margin_bottom = 285.0
-text = "City Name"
+text = "Elecoms HQ"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="BudgetMenu" type="MenuButton" parent="."]
-margin_left = 312.0
+margin_left = 339.0
 margin_top = 294.0
-margin_right = 601.0
+margin_right = 628.0
 margin_bottom = 314.0
 text = "Starting Budget"
 items = [ "20000", null, 0, false, false, 0, 0, null, "", false, "10000", null, 0, false, false, 1, 0, null, "", false, "500", null, 0, false, false, 2, 0, null, "", false ]
@@ -41,9 +41,12 @@ __meta__ = {
 }
 
 [node name="CreateBtn" type="Button" parent="."]
-margin_left = 312.0
+margin_left = 339.0
 margin_top = 319.0
-margin_right = 601.0
+margin_right = 628.0
 margin_bottom = 339.0
 text = "Create"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="CreateBtn" to="." method="_on_CreateBtn_pressed"]
