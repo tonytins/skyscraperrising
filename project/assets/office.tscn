@@ -9,7 +9,3 @@ room_income = 500
 room_expense = 350
 room_capacity = 1
 is_rentable = true
-
-[node name="Rent" type="Timer" parent="."]
-wait_time = 5.0
-[connection signal="timeout" from="Rent" to="." method="_on_Rent_timeout"]

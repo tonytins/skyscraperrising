@@ -29,22 +29,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BudgetMenu" type="MenuButton" parent="."]
-margin_left = 339.0
-margin_top = 294.0
-margin_right = 628.0
-margin_bottom = 314.0
-text = "Starting Budget"
-items = [ "20000", null, 0, false, false, 0, 0, null, "", false, "10000", null, 0, false, false, 1, 0, null, "", false, "500", null, 0, false, false, 2, 0, null, "", false ]
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="CreateBtn" type="Button" parent="."]
 margin_left = 339.0
-margin_top = 319.0
+margin_top = 291.0
 margin_right = 628.0
-margin_bottom = 339.0
+margin_bottom = 311.0
 text = "Create"
 __meta__ = {
 "_edit_use_anchors_": false

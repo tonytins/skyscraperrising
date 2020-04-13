@@ -30,20 +30,20 @@ __meta__ = {
 
 [node name="NameLbl" type="Label" parent="GPanel/GameMenus"]
 margin_top = 3.0
-margin_right = 80.0
+margin_right = 9.0
 margin_bottom = 17.0
-text = "Tower Name"
+text = "#"
 
 [node name="GameSpeed" type="MenuButton" parent="GPanel/GameMenus"]
-margin_left = 84.0
-margin_right = 177.0
+margin_left = 13.0
+margin_right = 106.0
 margin_bottom = 20.0
 text = "Game Speed"
 items = [ "Slow", null, 0, false, false, 0, 0, null, "", false, "Medium", null, 0, false, false, 1, 0, null, "", false, "Fast", null, 0, false, false, 2, 0, null, "", false ]
 
 [node name="Disasters" type="MenuButton" parent="GPanel/GameMenus"]
-margin_left = 181.0
-margin_right = 253.0
+margin_left = 110.0
+margin_right = 182.0
 margin_bottom = 20.0
 text = "Disasters"
 
@@ -60,6 +60,39 @@ alignment = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="YearLbl" type="Label" parent="GPanel/GameStatus"]
+margin_left = 193.0
+margin_top = 3.0
+margin_right = 200.0
+margin_bottom = 17.0
+text = "Y"
+
+[node name="YearNumLbl" type="Label" parent="GPanel/GameStatus"]
+margin_left = 204.0
+margin_top = 3.0
+margin_right = 212.0
+margin_bottom = 17.0
+text = "1"
+
+[node name="QuaterLbl" type="Label" parent="GPanel/GameStatus"]
+margin_left = 216.0
+margin_top = 3.0
+margin_right = 227.0
+margin_bottom = 17.0
+text = "Q"
+
+[node name="QuaterNumLbl" type="Label" parent="GPanel/GameStatus"]
+margin_left = 231.0
+margin_top = 3.0
+margin_right = 239.0
+margin_bottom = 17.0
+text = "1"
+
+[node name="VSeparator" type="VSeparator" parent="GPanel/GameStatus"]
+margin_left = 243.0
+margin_right = 247.0
+margin_bottom = 20.0
 
 [node name="CurrencyLbl" type="Label" parent="GPanel/GameStatus"]
 margin_left = 251.0
@@ -84,6 +117,7 @@ margin_bottom = 583.202
 text = "Debug"
 
 [node name="WelcomeDlg" type="AcceptDialog" parent="."]
+pause_mode = 2
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
