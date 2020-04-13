@@ -7,15 +7,16 @@
 [node name="World" type="Node"]
 script = ExtResource( 1 )
 
-[node name="GUI" parent="." instance=ExtResource( 2 )]
-
 [node name="Quarters" type="Timer" parent="."]
 wait_time = 10.0
 autostart = true
 
 [node name="Office" parent="." instance=ExtResource( 3 )]
-position = Vector2( 427.577, 274.653 )
-income_frequency = 1
+position = Vector2( 481.153, 260.554 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Office2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 271.221, 296.175 )
+choose_sprite = 1
+
+[node name="GUI" parent="." instance=ExtResource( 2 )]
 [connection signal="timeout" from="Quarters" to="." method="_on_Quarters_timeout"]
