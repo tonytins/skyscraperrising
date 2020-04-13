@@ -20,9 +20,9 @@ var num_of_tenants: int = 0
 
 func _ready():
 	
-	GameData.connect("quarter_income", self, "_get_quarter_income")
-	GameData.connect("one_time_income", self, "_get_one_time_income")
-	GameData.connect("pay_expense", self, "_get_expense")
+	GameEvent.connect("quarter_income", self, "_get_quarter_income")
+	GameEvent.connect("one_time_income", self, "_get_one_time_income")
+	GameEvent.connect("pay_expense", self, "_get_expense")
 	
 	# Once placed in-world, it'll substract from your budget
 	if GameData.budget >= room_cost:

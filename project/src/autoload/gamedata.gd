@@ -6,10 +6,6 @@ var year: int = 1
 var prev_quarter: int
 var quarter: int = 1
 var population: int = 0
-var news: String
+var news_ticker: String
 
 enum GameSpeed { SLOW, MEDIUM, FAST }
-
-signal quarter_income
-signal one_time_income
-signal pay_expense

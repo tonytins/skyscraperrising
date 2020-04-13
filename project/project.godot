@@ -22,6 +22,7 @@ config/icon="res://start.png"
 [autoload]
 
 GameData="*res://src/autoload/gamedata.gd"
+GameEvent="*res://src/autoload/gameevent.gd"
 
 [display]
 

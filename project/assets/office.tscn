@@ -36,5 +36,5 @@ script = ExtResource( 1 )
 [node name="RoomAnime" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "v1"
-frame = 2
+frame = 4
 playing = true
