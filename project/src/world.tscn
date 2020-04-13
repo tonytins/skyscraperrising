@@ -13,9 +13,17 @@ autostart = true
 
 [node name="Office" parent="." instance=ExtResource( 3 )]
 position = Vector2( 481.153, 260.554 )
+room_income = 700
+room_expense = 200
+room_capacity = 1
+is_rentable = true
 
 [node name="Office2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 271.221, 296.175 )
+room_income = 600
+room_expense = 300
+room_capacity = 1
+is_rentable = true
 choose_sprite = 1
 
 [node name="GUI" parent="." instance=ExtResource( 2 )]

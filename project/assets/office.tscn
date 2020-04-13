@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://src/room.gd" type="Script" id=1]
 [ext_resource path="res://assets/Office/office_t0_1_3.png" type="Texture" id=2]
@@ -14,15 +14,17 @@
 [ext_resource path="res://assets/Office/office_t1_2_2.png" type="Texture" id=12]
 [ext_resource path="res://assets/Office/office_t1_2_0.png" type="Texture" id=13]
 [ext_resource path="res://assets/Office/office_t1_2_5.png" type="Texture" id=14]
+[ext_resource path="res://assets/Office/office_t0_0_1.png" type="Texture" id=15]
+[ext_resource path="res://assets/Office/office_t1_0_1.png" type="Texture" id=16]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 13 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 11 ), ExtResource( 14 ) ],
+"frames": [ ExtResource( 16 ), ExtResource( 13 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 11 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "v2",
 "speed": 2.0
 }, {
-"frames": [ ExtResource( 9 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ) ],
+"frames": [ ExtResource( 15 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "v1",
 "speed": 2.0
@@ -30,14 +32,9 @@ animations = [ {
 
 [node name="Office" type="Node2D"]
 script = ExtResource( 1 )
-room_cost = 1000
-room_income = 500
-room_expense = 350
-room_capacity = 1
-is_rentable = true
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+[node name="RoomAnime" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "v1"
-frame = 5
+frame = 2
 playing = true
