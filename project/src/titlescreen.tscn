@@ -5,37 +5,46 @@
 [node name="SartMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WelcomeVbox" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -156.0
+margin_top = -48.0
+margin_right = 156.0
+margin_bottom = 24.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
-margin_left = 339.0
-margin_top = 235.0
-margin_right = 628.0
-margin_bottom = 249.0
+[node name="WelcomeLbl" type="Label" parent="WelcomeVbox"]
+margin_right = 312.0
+margin_bottom = 14.0
 text = "Welcome to Elecoms Tower!"
 align = 1
 
-[node name="TwrNameEdit" type="LineEdit" parent="."]
-margin_left = 339.0
-margin_top = 261.0
-margin_right = 628.0
-margin_bottom = 285.0
+[node name="NameEdit" type="LineEdit" parent="WelcomeVbox"]
+margin_top = 18.0
+margin_right = 312.0
+margin_bottom = 42.0
 text = "Elecoms HQ"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CreateBtn" type="Button" parent="."]
-margin_left = 339.0
-margin_top = 291.0
-margin_right = 628.0
-margin_bottom = 311.0
+[node name="CreateBtn" type="Button" parent="WelcomeVbox"]
+margin_top = 46.0
+margin_right = 312.0
+margin_bottom = 66.0
 text = "Create"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="CreateBtn" to="." method="_on_CreateBtn_pressed"]
+[connection signal="pressed" from="WelcomeVbox/CreateBtn" to="WelcomeVbox" method="_on_CreateBtn_pressed"]
