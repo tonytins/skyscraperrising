@@ -17,7 +17,7 @@ _global_script_class_icons={
 
 config/name="Skyscraper Rising"
 run/main_scene="res://src/world.tscn"
-config/icon="res://icon.png"
+config/icon="res://start.png"
 
 [autoload]
 

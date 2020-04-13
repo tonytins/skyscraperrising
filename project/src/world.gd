@@ -6,6 +6,7 @@ func _on_Quarters_timeout():
 		GameData.quarter = 1
 		GameData.year += 1
 	else:
+		GameData.emit_signal("quarter_income")
 		GameData.quarter += 1
 	
 	GameData.prev_quarter = GameData.quarter
