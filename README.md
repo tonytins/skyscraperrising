@@ -5,6 +5,7 @@ Skyscraper Rising is a SimTower-inspired sandbox simulation game made in Godot. 
 ## Authors
 
 - **Anthony Foxclaw** - _Initial work_ - [tonytins](https://github.com/tonytins)
+- **binarybird** - _Sprites_ - [binarybird](https://github.com/binarybird)
 
 See also the list of [contributors](https://github.com/tonytins/SkyscraperRising/contributors) who participated in this project.
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://src/gui.gd" type="Script" id=1]
+[ext_resource path="res://src/gpanel.gd" type="Script" id=1]
 
 [node name="GUI" type="Control"]
 anchor_right = 1.0
@@ -39,7 +39,6 @@ __meta__ = {
 [node name="GPanelContainer" type="MarginContainer" parent="."]
 anchor_right = 1.0
 margin_bottom = 20.0
-script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -47,6 +46,7 @@ __meta__ = {
 [node name="GPanel" type="Panel" parent="GPanelContainer"]
 margin_right = 800.0
 margin_bottom = 20.0
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

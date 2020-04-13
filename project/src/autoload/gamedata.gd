@@ -5,4 +5,5 @@ var budget: int = 2000000
 var year: int = 1
 var prev_quarter: int
 var quarter: int = 1
+var population: int = 0
 enum GameSpeed { SLOW, MEDIUM, FAST }
