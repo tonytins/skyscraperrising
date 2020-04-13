@@ -40,134 +40,81 @@ __meta__ = {
 
 [node name="GPanelContainer" type="MarginContainer" parent="."]
 anchor_right = 1.0
-margin_bottom = 20.0
+margin_bottom = 27.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="GPanel" type="Panel" parent="GPanelContainer"]
 margin_right = 800.0
-margin_bottom = 20.0
+margin_bottom = 27.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GameMenus" type="HBoxContainer" parent="GPanelContainer/GPanel"]
+[node name="GameStats" type="HBoxContainer" parent="GPanelContainer/GPanel"]
 margin_left = 3.0
+margin_top = 3.0
 margin_right = 197.0
-margin_bottom = 20.0
+margin_bottom = 23.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="NameBtn" type="Button" parent="GPanelContainer/GPanel/GameMenus"]
-margin_right = 21.0
+[node name="NameLbl" type="Label" parent="GPanelContainer/GPanel/GameStats"]
+margin_top = 3.0
+margin_right = 38.0
+margin_bottom = 17.0
+text = "Name"
+
+[node name="NameStatSep" type="VSeparator" parent="GPanelContainer/GPanel/GameStats"]
+margin_left = 42.0
+margin_right = 46.0
 margin_bottom = 20.0
+
+[node name="YearNumLbl" type="Label" parent="GPanelContainer/GPanel/GameStats"]
+margin_left = 50.0
+margin_top = 3.0
+margin_right = 59.0
+margin_bottom = 17.0
 text = "#"
-flat = true
-
-[node name="GameSpeed" type="MenuButton" parent="GPanelContainer/GPanel/GameMenus"]
-margin_left = 25.0
-margin_right = 118.0
-margin_bottom = 20.0
-text = "Game Speed"
-items = [ "Slow", null, 0, false, false, 0, 0, null, "", false, "Medium", null, 0, false, false, 1, 0, null, "", false, "Fast", null, 0, false, false, 2, 0, null, "", false ]
-
-[node name="Disasters" type="MenuButton" parent="GPanelContainer/GPanel/GameMenus"]
-margin_left = 122.0
-margin_right = 194.0
-margin_bottom = 20.0
-text = "Disasters"
-
-[node name="GameStatus" type="HBoxContainer" parent="GPanelContainer/GPanel"]
-anchor_left = 1.0
-anchor_right = 1.0
-margin_left = -196.0
-margin_right = -2.0
-margin_bottom = 20.0
-alignment = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PopLbl" type="Label" parent="GPanelContainer/GPanel/GameStatus"]
-margin_left = 76.0
+[node name="YearLbl" type="Label" parent="GPanelContainer/GPanel/GameStats"]
+margin_left = 63.0
 margin_top = 3.0
-margin_right = 104.0
+margin_right = 75.0
 margin_bottom = 17.0
-text = "Pop:"
+text = "Yr"
 
-[node name="PopNumLbl" type="Label" parent="GPanelContainer/GPanel/GameStatus"]
-margin_left = 108.0
+[node name="QuaterLbl" type="Label" parent="GPanelContainer/GPanel/GameStats"]
+margin_left = 79.0
 margin_top = 3.0
-margin_right = 117.0
-margin_bottom = 17.0
-text = "#"
-
-[node name="YearLbl" type="Label" parent="GPanelContainer/GPanel/GameStatus"]
-margin_left = 121.0
-margin_top = 3.0
-margin_right = 128.0
-margin_bottom = 17.0
-text = "Y"
-
-[node name="YearNumLbl" type="Label" parent="GPanelContainer/GPanel/GameStatus"]
-margin_left = 132.0
-margin_top = 3.0
-margin_right = 141.0
-margin_bottom = 17.0
-text = "#"
-
-[node name="QuaterLbl" type="Label" parent="GPanelContainer/GPanel/GameStatus"]
-margin_left = 145.0
-margin_top = 3.0
-margin_right = 156.0
+margin_right = 90.0
 margin_bottom = 17.0
 text = "Q"
 
-[node name="QuaterNumLbl" type="Label" parent="GPanelContainer/GPanel/GameStatus"]
-margin_left = 160.0
+[node name="QuaterNumLbl" type="Label" parent="GPanelContainer/GPanel/GameStats"]
+margin_left = 94.0
 margin_top = 3.0
-margin_right = 169.0
+margin_right = 103.0
 margin_bottom = 17.0
 text = "#"
 
-[node name="CurrencyLbl" type="Label" parent="GPanelContainer/GPanel/GameStatus"]
-margin_left = 173.0
+[node name="CurrencyLbl" type="Label" parent="GPanelContainer/GPanel/GameStats"]
+margin_left = 107.0
 margin_top = 3.0
-margin_right = 181.0
+margin_right = 115.0
 margin_bottom = 17.0
 text = "$"
 
-[node name="MoneyLbl" type="Label" parent="GPanelContainer/GPanel/GameStatus"]
-margin_left = 185.0
+[node name="MoneyLbl" type="Label" parent="GPanelContainer/GPanel/GameStats"]
+margin_left = 119.0
 margin_top = 3.0
-margin_right = 194.0
+margin_right = 128.0
 margin_bottom = 17.0
 text = "#"
-
-[node name="TickerContainer" type="MarginContainer" parent="."]
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = -21.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TickerPanel" type="Panel" parent="TickerContainer"]
-margin_right = 800.0
-margin_bottom = 21.0
-
-[node name="NewTickerLbl" type="Label" parent="TickerContainer/TickerPanel"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = 3.0
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id efficitur dui. Aliquam non aliquam sapien. Nulla. "
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 [connection signal="confirmed" from="WelcomeDlg" to="." method="_on_WelcomeDlg_confirmed"]
-[connection signal="pressed" from="GPanelContainer/GPanel/GameMenus/NameBtn" to="." method="_on_NameBtn_pressed"]
